@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Parser</title>
+<style>
+    .parse {
+        margin-left: 45%;
+        margin-top: 10%;
+    }
+</style>
+</head>
+<body>
+<div class="parse">
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Start-Parsing">
+</form>
+</div>
+</body>
+</html>
