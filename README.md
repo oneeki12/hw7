@@ -1,4 +1,4 @@
-# Registration and Login (Django)
+# Регистрация и Логин (Django)
 
 > Next commands will works only on Linux
 
