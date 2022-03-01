@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Логин</title>
+        <style>
+            .mainpage {
+                margin-left: 770px;
+                font-family: cursive;
+                font-size: xx-large;
+            }
+            .button{
+                margin-left: 800px;
+                border-radius: 8px;
+                font-size: larger;
+                display: inline-block;
+            }
+            .github {
+                margin-left: 800px;
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainpage">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+        </div>
+            <div class="button">
+                <button class="btn btn-primary" type="submit">Вход</button>
+            </div>
+        </div>
+        </form>
+        <div class="github">
+        <form action="https://github.com/oneeki12">
+            <input type="submit" value="Гитхаб Автора">
+        </form>
+        </div>
+    </body> 
+</html>

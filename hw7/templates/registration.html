@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Регистрация</title>
+        <style>
+            .mainpage {
+                margin-left: 700px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: medium;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainpage">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-primary" type="submit">Регистрация</button>
+        </div>
+        </form>
+    </body>
+</html>

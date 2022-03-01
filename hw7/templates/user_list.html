@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Users</title>
+    </head>
+    <body>
+        <div>
+            <ul>
+                {% for user in object_list %}
+                <li>
+                    <h2>{{ user.username }}</h2>
+                </li>
+                {% endfor %} 
+            </ul> 
+        </div>
+    </body> 
+</html>
